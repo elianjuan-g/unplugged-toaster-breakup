@@ -17,9 +17,10 @@ at most 280 characters, no setup, no explanation.
 ## How it works
 
 `main.ts` writes the chosen line deterministically to `/output/entry.txt`
-(no network, no reads outside this repo). `check.mjs` verifies the output
-is UTF-8 text of 1–280 characters, a single line, not only whitespace, and
-plainly a toaster breakup line.
+(no network, no reads outside this repo). It refuses to write anything
+longer than 280 characters. `check.mjs` verifies the output is exactly the
+chosen line: UTF-8 text of 1–280 characters, a single line, not only
+whitespace, and plainly a toaster breakup line.
 
 ```sh
 node --experimental-strip-types main.ts
