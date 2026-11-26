@@ -1,0 +1,1 @@
+{"description":"A smart toaster's breakup line — one line, 138 characters (make.fun bounty entry)","license":"MIT","main":"main.ts","name":"unplugged-toaster-breakup","scripts":{"check":"node check.mjs","start":"node --experimental-strip-types main.ts"},"type":"module","version":"1.0.0"}
