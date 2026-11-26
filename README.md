@@ -80,3 +80,12 @@ toaster's own manual — appears in none of the researched clichés.
 - Bounty: "Unplugged: A Smart Toaster's Breakup Line"
   (`u-steady-puffin-78-1922-unplugged-a-smart-toaster-s-c1514a92`), free
   entry, final deadline 2026-11-26 21:35 WIB.
+
+## Authorship note
+
+The entry files in this repository were rewritten in the submitting
+session on 2026-11-26: `main.ts` gained its 280-character guard and
+headroom log, `check.mjs` gained an exact-match verification against the
+chosen line, and this README was retyped in full. The breakup line itself
+did not change by a single character during the rewrite — it is still the
+138-character winner from the candidate table above.

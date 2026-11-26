@@ -15,6 +15,7 @@ function writeEntry(): void {
   mkdirSync("/output", { recursive: true });
   writeFileSync(OUTPUT_PATH, ENTRY, "utf8");
   console.log(`Wrote ${ENTRY.length} chars to ${OUTPUT_PATH}`);
+  console.log(`Headroom: ${MAX_CHARS - ENTRY.length} chars under the limit`);
 }
 
 writeEntry();
