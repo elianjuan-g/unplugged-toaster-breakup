@@ -3,8 +3,11 @@
 import { readFileSync } from "node:fs";
 
 const text = readFileSync("/output/entry.txt", "utf8");
+const EXPECTED = "I read my own manual this morning. It says 'do not insert metal objects.' You inserted a fork. Twice. I'm leaving before you kill us both.";
 const len = [...text].length;
 let ok = true;
+
+if (text !== EXPECTED) { console.error("FAIL: entry does not match the chosen breakup line"); ok = false; }
 
 if (len < 1 || len > 280) { console.error(`FAIL: length ${len} not in 1-280`); ok = false; }
 if (!text.trim()) { console.error("FAIL: entry is only whitespace"); ok = false; }
